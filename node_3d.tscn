@@ -26,8 +26,6 @@ size = Vector2(90, 90)
 
 [sub_resource type="CapsuleMesh" id="CapsuleMesh_r3fl7"]
 
-[sub_resource type="BoxMesh" id="BoxMesh_r3fl7"]
-
 [sub_resource type="CapsuleShape3D" id="CapsuleShape3D_jka67"]
 radius = 0.492681
 height = 2.10732
@@ -46,6 +44,8 @@ size = Vector3(0.3, 0.3, 1.5)
 
 [sub_resource type="SphereShape3D" id="SphereShape3D_r3fl7"]
 radius = 0.16264643
+
+[sub_resource type="BoxMesh" id="BoxMesh_r3fl7"]
 
 [sub_resource type="ConcavePolygonShape3D" id="ConcavePolygonShape3D_i5arm"]
 data = PackedVector3Array(45, 0, 45, -45, 0, 45, 45, 0, -45, -45, 0, 45, -45, 0, -45, 45, 0, -45)
@@ -234,10 +234,6 @@ script = ExtResource("1_a202f")
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.00273497, 0.909441, -0.0132046)
 mesh = SubResource("CapsuleMesh_r3fl7")
 
-[node name="MeshInstance3D" type="MeshInstance3D" parent="map_player/player/MeshInstance3D"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.9014039, 0)
-mesh = SubResource("BoxMesh_r3fl7")
-
 [node name="CollisionShape3D" type="CollisionShape3D" parent="map_player/player"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.01363, 0)
 shape = SubResource("CapsuleShape3D_jka67")
@@ -277,6 +273,14 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.30220413, -1.9519749)
 
 [node name="GunPosition" type="Node3D" parent="map_player/player/Neck/Camera3D"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.27462053, -0.19702768, -1.834774)
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="map_player/player/Neck/Camera3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0027349703, 0.27232647, -0.067993164)
+mesh = SubResource("BoxMesh_r3fl7")
+skeleton = NodePath("../../../MeshInstance3D")
+
+[node name="Sprite3D" type="Sprite3D" parent="map_player/player/Neck/Camera3D/MeshInstance3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -0.5260391)
 
 [node name="groundray" type="RayCast3D" parent="map_player/player"]
 target_position = Vector3(0, 0.1, 0)

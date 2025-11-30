@@ -2,9 +2,9 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cnfyonviw611a"
-path.s3tc="res://.godot/imported/how_to_play.png-b75e41366cfc7f6c054e159c64ff3d02.s3tc.ctex"
-path.etc2="res://.godot/imported/how_to_play.png-b75e41366cfc7f6c054e159c64ff3d02.etc2.ctex"
+uid="uid://dpftq8asih62a"
+path.s3tc="res://.godot/imported/fface.png-ac9df9f67baeb13bae3bca16521df506.s3tc.ctex"
+path.etc2="res://.godot/imported/fface.png-ac9df9f67baeb13bae3bca16521df506.etc2.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
@@ -12,8 +12,8 @@ metadata={
 
 [deps]
 
-source_file="res://files/how_to_play.png"
-dest_files=["res://.godot/imported/how_to_play.png-b75e41366cfc7f6c054e159c64ff3d02.s3tc.ctex", "res://.godot/imported/how_to_play.png-b75e41366cfc7f6c054e159c64ff3d02.etc2.ctex"]
+source_file="res://files/fface.png"
+dest_files=["res://.godot/imported/fface.png-ac9df9f67baeb13bae3bca16521df506.s3tc.ctex", "res://.godot/imported/fface.png-ac9df9f67baeb13bae3bca16521df506.etc2.ctex"]
 
 [params]
 
